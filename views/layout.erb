@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/lib/jquery-1.11.1.min.js"></script>
+    <script src="js/lib/jquery-ui.js"></script>
+    <script src="js/lib/three.min.js"></script>
+    <script src="js/lib/leap.min.js"></script>
+    <script src="js/controls/LeapWeightControls.js"></script>
+    <script src="js/controls/LeapPaddleControls.js"></script>
+    <script src="js/controls/LeapPointerControls.js"></script>
+    <script src="js/controls/LeapTwoHandControls.js"></script>
+    <script src="js/controls/LeapTrackballControls.js"></script>
+    <script src="js/lib/simple_reverb.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/visualizer.js"></script>
+    <script src="js/audio.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="modal">
+    <div id="inner-modal">
+      <h3 id="welcome-message">Welcome to Surface!</h3>
+      <p>Surface is an interactive musical toy built by <a href="http://github.com/MALRMALR" target="_blank">Michael Ross</a> using Three.JS, WebGL, Web Audio API, and jQuery.</p>
+
+<p>You can adjust the sliders in the controls to change vertices of each geometric shape.  The <span class="blue"><strong>blue</strong></span> keys
+trigger major and minor chords and interact with visualizations.  The <span class="green"><strong>right arrow</strong></span> key will change the camera's perspective.  The <span class="red"><strong>left arrow</strong></span> key will reload the page.
+
+      <div id="keyboard-img"><img src="assets/keyboard.jpg" /></div>
+
+      <p class="welcome">tap the <span class="cyan">spacebar</span> to begin</p>
+    </div>
+  </div>
+  <%= yield %>
+</body>
+</html>
