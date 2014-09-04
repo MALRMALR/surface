@@ -55,15 +55,22 @@ div#ctrl {
   position: absolute;
   top: 0;
   left: 0;
-  background: #CCD no-repeat fixed left;
+  background: rgba(196,249,253,1);
+  background: rgba(196,249,253,0.65);
+  background: -moz-linear-gradient(left, rgba(196,249,253,0.65) 0%, rgba(196,249,253,0.53) 69%, rgba(196,249,253,0.53) 77%, rgba(196,249,253,0.53) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(196,249,253,0.65)), color-stop(69%, rgba(196,249,253,0.53)), color-stop(77%, rgba(196,249,253,0.53)), color-stop(100%, rgba(196,249,253,0.53)));
+  background: -webkit-linear-gradient(left, rgba(196,249,253,0.65) 0%, rgba(196,249,253,0.53) 69%, rgba(196,249,253,0.53) 77%, rgba(196,249,253,0.53) 100%);
+  background: -o-linear-gradient(left, rgba(196,249,253,0.65) 0%, rgba(196,249,253,0.53) 69%, rgba(196,249,253,0.53) 77%, rgba(196,249,253,0.53) 100%);
+  background: -ms-linear-gradient(left, rgba(196,249,253,0.65) 0%, rgba(196,249,253,0.53) 69%, rgba(196,249,253,0.53) 77%, rgba(196,249,253,0.53) 100%);
+  background: linear-gradient(to right, rgba(196,249,253,0.65) 0%, rgba(196,249,253,0.53) 69%, rgba(196,249,253,0.53) 77%, rgba(196,249,253,0.53) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4f9fd', endColorstr='#c4f9fd', GradientType=1 );
   opacity: 0.8;
   padding: 0 8px 10px 2px;
-  border-radius: 5px;
+  border-radius: 2px;
   max-width: 200px;
 }
 
 div.wrapper {
-  /*border: 1px dotted #fff;*/
   padding-top: 6px;
   margin: 0 0 0 4px;
   border-radius: 3px;
@@ -133,13 +140,14 @@ input[type="range"]::-ms-tooltip {
 #modal {
   position: fixed;
   z-index: 11;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(40, 40, 40, 0.9);
   width: 600px;
   display: none;
   color: whitesmoke;
   top: 15%;
   left: 30%;
-  border: 1px dotted #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
 }
 
 #modal p {
@@ -164,6 +172,9 @@ a:hover {
 #welcome-message {
   font-size: 30px;
   text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px #D1ADCB;
 }
 
 .welcome {
