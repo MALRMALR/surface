@@ -1,6 +1,6 @@
 // CHORDS
 
-var playChord = function(input1, input2, input3) {
+var playChord = function() {
   for (var i = 0; i < freq.length; i++) {
     var mainosc = ctx.createOscillator();
     mainosc.frequency.value = freq[i];

@@ -19,10 +19,6 @@ $(document).ready(function() {
   // INIT THREE SCENE
   init();
 
-  // EVENT LISTENERS
-  // $('canvas').on('click', animate);
-  // animate();
-
   // MODAL
   var modal = $('#modal');
   modal.show();
