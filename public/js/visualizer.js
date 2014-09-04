@@ -129,6 +129,7 @@ function init() {
     shape3 = new THREE.Mesh(geometry3, material3);
     shape4 = new THREE.Mesh(geometry4, material4);
 
+
     // LIGHT
     var light = new THREE.AmbientLight(0x505050);
 
