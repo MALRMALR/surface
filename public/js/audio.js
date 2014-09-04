@@ -23,7 +23,7 @@ var playChord = function(input1, input2, input3) {
     // FILTER
     var filterNode = ctx.createBiquadFilter();
     filterNode.type = 0;
-    filterNode.frequency.value = 800;
+    filterNode.frequency.value = 440;
 
     // CONNECTIONS
     mainosc.connect(gainNode);
@@ -41,16 +41,19 @@ var playChord = function(input1, input2, input3) {
 
     var canvasControls = $('div#canvas-controls');
 
-    canvasControls.find("input[name='"+input1+"']").on('input', function() {
+    canvasControls.find("input[name='reverb']").on('input', function() {
       reverbNode.decay = parseInt($(this).val());
+      console.log(parseInt($(this).val()));
     });
 
-    canvasControls.find("input[name='"+input2+"']").on('input', function() {
+    canvasControls.find("input[name='gain']").on('input', function() {
       gainNode.gain.value = parseInt($(this).val());
+      console.log(parseInt($(this).val()));
     })
 
-    canvasControls.find("input[name='"+input3+"']").on('input', function() {
+    canvasControls.find("input[name='filterFrequency']").on('input', function() {
       filterNode.frequency.value = parseInt($(this).val());
+      console.log(parseInt($(this).val()));
     })
 
 }

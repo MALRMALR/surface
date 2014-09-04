@@ -145,7 +145,7 @@ input[type="range"]::-ms-tooltip {
 #modal p {
   font-size: 18px;
   font-weight: lighter;
-  color: #ccc
+  color: #ccc;
 }
 
 #inner-modal {
@@ -165,6 +165,7 @@ a:hover {
   font-size: 30px;
   text-align: center;
 }
+
 .welcome {
   font-size: 26px;
   font-family: "gill sans";

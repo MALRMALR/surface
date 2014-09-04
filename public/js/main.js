@@ -27,11 +27,6 @@ $(document).ready(function() {
   var modal = $('#modal');
   modal.show();
 
-  // $(document).click(function() {
-  //   modal.hide();
-  // })
-
-
   // JQUERY UI STUFF
   $('#ctrl-container').draggable({grid: [50, 50]});
   $("#ctrl-container").attr('title', 'Please feel free to put me where ever you like.  You can also hide me using the controls below');
