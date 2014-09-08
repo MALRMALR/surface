@@ -11,7 +11,7 @@ var playChord = function() {
       decay: 1, // impulse response decay rate
       reverse: 0 // reverse the impulse response
     });
-    reverbNode.seconds = 2;
+    reverbNode.seconds = 0.5;
     reverbNode.decay = 1
 
     // GAIN
@@ -28,14 +28,15 @@ var playChord = function() {
     // CONNECTIONS
     mainosc.connect(gainNode);
     gainNode.connect(filterNode);
-    filterNode.connect(reverbNode.input);
-    reverbNode.connect(ctx.destination);
+    // filterNode.connect(reverbNode.input);
+    filterNode.connect(ctx.destination);
+    // reverbNode.connect(ctx.destination);
 
     // TIME - currentTime = 0
     currentTime = ctx.currentTime;
     mainosc.start(currentTime);
     gainNode.gain.setTargetAtTime(0, ctx.currentTime, timeConstant);
-    mainosc.stop(currentTime + 0.6)
+    mainosc.stop(currentTime + 0.3)
 
   };
 
