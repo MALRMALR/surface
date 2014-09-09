@@ -28,9 +28,9 @@ var playChord = function() {
     // CONNECTIONS
     mainosc.connect(gainNode);
     gainNode.connect(filterNode);
-    // filterNode.connect(reverbNode.input);
-    filterNode.connect(ctx.destination);
-    // reverbNode.connect(ctx.destination);
+    filterNode.connect(reverbNode.input);
+    // filterNode.connect(ctx.destination);
+    reverbNode.connect(ctx.destination);
 
     // TIME - currentTime = 0
     currentTime = ctx.currentTime;
