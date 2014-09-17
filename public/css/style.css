@@ -55,13 +55,11 @@ div#ctrl {
   position: absolute;
   top: 0;
   left: 0;
-
   background: -webkit-linear-gradient(90deg, #DAE2F8 10%, #D6A4A4 90%); /* Chrome 10+, Saf5.1+ */
   background:    -moz-linear-gradient(90deg, #DAE2F8 10%, #D6A4A4 90%); /* FF3.6+ */
   background:     -ms-linear-gradient(90deg, #DAE2F8 10%, #D6A4A4 90%); /* IE10 */
   background:      -o-linear-gradient(90deg, #DAE2F8 10%, #D6A4A4 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #DAE2F8 10%, #D6A4A4 90%); /* W3C */
-
   opacity: 0.8;
   padding: 0 8px 10px 2px;
   border-radius: 2px;
