@@ -22,4 +22,4 @@ https://trello.com/b/S7lhq6g8/surface-wdi-proj-3
 * Three.JS
 * Sinatra
 
-Site can be viewed at: http://malr.co or http://frozen-fortress-2237.herokuapp.com/
+Site can be viewed at: http://surfaceapp.net or http://frozen-fortress-2237.herokuapp.com/
